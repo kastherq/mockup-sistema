@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo | Sistema Operativo para Construccion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">SO</div>
+        <div>
+          <p class="eyebrow">Demo comercial</p>
+          <h1>Sistema Operativo</h1>
+          <p class="brand-subtitle">Constructora / oficina administrativa</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item active" data-screen="dashboard">Resumen Ejecutivo</button>
+        <button class="nav-item" data-screen="costos">Costos y Gastos</button>
+        <button class="nav-item" data-screen="rrhh">Recursos Humanos</button>
+        <button class="nav-item" data-screen="ventas">Ventas y Campo</button>
+        <button class="nav-item" data-screen="documentos">Cartas e Informes</button>
+        <button class="nav-item" data-screen="reportes">Power BI y Exportacion</button>
+      </nav>
+
+      <div class="sidebar-card">
+        <p class="eyebrow">Objetivo del MVP</p>
+        <p>Centralizar gastos, personal, ventas e informes en una sola plataforma.</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Propuesta visual</p>
+          <h2>Mockup inicial para validar la idea antes de desarrollar</h2>
+          <p class="hero-copy">
+            Esta demo muestra una primera version del sistema, enfocada en orden operativo,
+            reportes y control interno para una empresa del sector construccion.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <a class="action-btn tertiary" href="home-office.html">Ver version remota</a>
+          <button class="action-btn primary" id="nextScreen">Ver siguiente modulo</button>
+          <button class="action-btn secondary" id="openModal">Ver alcance sugerido</button>
+        </div>
+      </header>
+
+      <section class="screen active" id="dashboard">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Panel principal</p>
+            <h3>Resumen ejecutivo del negocio</h3>
+          </div>
+          <span class="status-pill">Datos simulados</span>
+        </div>
+
+        <div class="metrics-grid">
+          <article class="metric-card">
+            <span>Ingresos del mes</span>
+            <strong>$128,400</strong>
+            <small>+12% vs mes anterior</small>
+          </article>
+          <article class="metric-card">
+            <span>Costos de obra</span>
+            <strong>$76,890</strong>
+            <small>4 proyectos activos</small>
+          </article>
+          <article class="metric-card">
+            <span>Personal en campo</span>
+            <strong>28</strong>
+            <small>5 supervisores / 23 operativos</small>
+          </article>
+          <article class="metric-card">
+            <span>Cartas e informes</span>
+            <strong>16</strong>
+            <small>emitidos esta semana</small>
+          </article>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Obras activas</h4>
+              <span>Seguimiento</span>
+            </div>
+            <div class="project-list">
+              <div class="project-row">
+                <div>
+                  <strong>Residencial Mirador Norte</strong>
+                  <p>Costo acumulado: $24,100</p>
+                </div>
+                <span class="tag amber">En ejecucion</span>
+              </div>
+              <div class="project-row">
+                <div>
+                  <strong>Plaza Comercial Vista Real</strong>
+                  <p>Costo acumulado: $31,450</p>
+                </div>
+                <span class="tag green">En presupuesto</span>
+              </div>
+              <div class="project-row">
+                <div>
+                  <strong>Remodelacion Torre Central</strong>
+                  <p>Costo acumulado: $12,920</p>
+                </div>
+                <span class="tag blue">Cierre administrativo</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Alertas operativas</h4>
+              <span>Hoy</span>
+            </div>
+            <ul class="alert-list">
+              <li>3 gastos pendientes de aprobacion</li>
+              <li>2 contratos de personal vencen esta semana</li>
+              <li>1 informe regional listo para enviar a gerencia</li>
+              <li>Power BI sincronizado hace 35 minutos</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen" id="costos">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Modulo 1</p>
+            <h3>Costos, gastos y control financiero</h3>
+          </div>
+          <span class="status-pill">Prioridad alta</span>
+        </div>
+
+        <div class="two-column">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Registro de gastos</h4>
+              <span>Flujo diario</span>
+            </div>
+            <div class="table-card">
+              <div class="table-row table-head">
+                <span>Fecha</span>
+                <span>Proyecto</span>
+                <span>Categoria</span>
+                <span>Monto</span>
+              </div>
+              <div class="table-row">
+                <span>08/04</span>
+                <span>Mirador Norte</span>
+                <span>Materiales</span>
+                <span>$2,850</span>
+              </div>
+              <div class="table-row">
+                <span>08/04</span>
+                <span>Vista Real</span>
+                <span>Transporte</span>
+                <span>$420</span>
+              </div>
+              <div class="table-row">
+                <span>07/04</span>
+                <span>Torre Central</span>
+                <span>Planilla</span>
+                <span>$1,260</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Que podria hacer este modulo</h4>
+              <span>Primera etapa</span>
+            </div>
+            <ul class="feature-list">
+              <li>Registrar ingresos y gastos por proyecto</li>
+              <li>Clasificar costos por materiales, transporte, nomina o compras</li>
+              <li>Visualizar costos reales vs presupuesto</li>
+              <li>Emitir reportes mensuales en PDF o Excel</li>
+              <li>Dejar la data lista para Power BI</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen" id="rrhh">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Modulo 2</p>
+            <h3>Recursos humanos y personal en obra</h3>
+          </div>
+          <span class="status-pill">Prioridad media</span>
+        </div>
+
+        <div class="two-column">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Equipo activo</h4>
+              <span>Vista de personal</span>
+            </div>
+            <div class="people-grid">
+              <div class="person-card">
+                <strong>Carlos Mendoza</strong>
+                <span>Supervisor</span>
+                <small>Proyecto: Mirador Norte</small>
+              </div>
+              <div class="person-card">
+                <strong>Ana Guerra</strong>
+                <span>Analista administrativa</span>
+                <small>Oficina central</small>
+              </div>
+              <div class="person-card">
+                <strong>Joel Batista</strong>
+                <span>Vendedor</span>
+                <small>Region Oeste</small>
+              </div>
+              <div class="person-card">
+                <strong>Luis Tejada</strong>
+                <span>Tecnico de campo</span>
+                <small>Proyecto: Vista Real</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Funciones sugeridas</h4>
+              <span>Operacion interna</span>
+            </div>
+            <ul class="feature-list">
+              <li>Fichas de empleados y contratistas</li>
+              <li>Asignacion por obra, zona o area comercial</li>
+              <li>Control de documentos y cartas laborales</li>
+              <li>Estado de contrato, cargo y supervisor</li>
+              <li>Historial de movimientos y observaciones</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen" id="ventas">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Modulo 3</p>
+            <h3>Ventas, clientes y relacion con personal de campo</h3>
+          </div>
+          <span class="status-pill">Prioridad media</span>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Embudo comercial</h4>
+              <span>Demo</span>
+            </div>
+            <div class="pipeline">
+              <div class="pipeline-step">
+                <strong>12</strong>
+                <span>Prospectos</span>
+              </div>
+              <div class="pipeline-step">
+                <strong>7</strong>
+                <span>Cotizaciones</span>
+              </div>
+              <div class="pipeline-step">
+                <strong>4</strong>
+                <span>Negociacion</span>
+              </div>
+              <div class="pipeline-step highlight">
+                <strong>3</strong>
+                <span>Cierres</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Enlace ventas vs campo</h4>
+              <span>Seguimiento</span>
+            </div>
+            <ul class="feature-list">
+              <li>Relacionar vendedor responsable con proyecto vendido</li>
+              <li>Asignar supervisor o equipo de campo al proyecto</li>
+              <li>Ver avance comercial y operativo en un solo lugar</li>
+              <li>Detectar diferencias entre lo vendido y lo ejecutado</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen" id="documentos">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Modulo 4</p>
+            <h3>Cartas, informes y plantillas de oficina</h3>
+          </div>
+          <span class="status-pill">Automatizable</span>
+        </div>
+
+        <div class="two-column">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Documentos disponibles</h4>
+              <span>Biblioteca</span>
+            </div>
+            <div class="document-list">
+              <div class="document-item">
+                <strong>Carta de trabajo</strong>
+                <small>RRHH</small>
+              </div>
+              <div class="document-item">
+                <strong>Informe semanal de obra</strong>
+                <small>Operaciones</small>
+              </div>
+              <div class="document-item">
+                <strong>Plantilla de cotizacion</strong>
+                <small>Ventas</small>
+              </div>
+              <div class="document-item">
+                <strong>Reporte de gastos</strong>
+                <small>Administracion</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Valor de este modulo</h4>
+              <span>Agiliza oficina</span>
+            </div>
+            <ul class="feature-list">
+              <li>Generar cartas desde plantillas predefinidas</li>
+              <li>Emitir informes con datos del sistema</li>
+              <li>Exportar a Word, Excel o PDF</li>
+              <li>Unificar el formato institucional de la empresa</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen" id="reportes">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Modulo 5</p>
+            <h3>Integracion con Office y Power BI</h3>
+          </div>
+          <span class="status-pill">Fase 2</span>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Exportacion</h4>
+              <span>Salidas</span>
+            </div>
+            <div class="export-grid">
+              <div class="export-card">Excel</div>
+              <div class="export-card">Word</div>
+              <div class="export-card">PDF</div>
+              <div class="export-card">CSV</div>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Escenario Power BI</h4>
+              <span>Gerencia</span>
+            </div>
+            <ul class="feature-list">
+              <li>Dashboards regionales por sucursal, zona o proyecto</li>
+              <li>Indicadores de ventas, costos, personal e informes</li>
+              <li>Suscripciones automaticas para gerencia</li>
+              <li>Conexion a tablas limpias del sistema</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="panel-card-head">
+        <h4 id="modalTitle">Alcance recomendado para la primera version</h4>
+        <button class="close-btn" id="closeModal" aria-label="Cerrar">x</button>
+      </div>
+      <ul class="feature-list">
+        <li>Panel principal con metricas de ingresos, gastos y personal</li>
+        <li>Registro de proyectos, ventas y costos por obra</li>
+        <li>Modulo basico de colaboradores y asignaciones</li>
+        <li>Emision de reportes e informes exportables</li>
+        <li>Estructura preparada para futura integracion con Power BI</li>
+      </ul>
+      <p class="modal-note">
+        Recomendacion comercial: vender este sistema por fases para evitar sobrecargar la primera propuesta.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

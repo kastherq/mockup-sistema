@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo | Administracion Remota</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-remote">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">AR</div>
+        <div>
+          <p class="eyebrow">Demo comercial</p>
+          <h1>Administracion Remota</h1>
+          <p class="brand-subtitle">Para operar desde casa o en movilidad</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item active" data-screen="dashboard">Centro de control</button>
+        <button class="nav-item" data-screen="costos">Costos y gastos</button>
+        <button class="nav-item" data-screen="contabilidad">Contabilidad</button>
+        <button class="nav-item" data-screen="rrhh">RRHH remoto</button>
+        <button class="nav-item" data-screen="documentos">Cartas e informes</button>
+        <button class="nav-item" data-screen="reportes">Office y Power BI</button>
+      </nav>
+
+      <div class="sidebar-card">
+        <p class="eyebrow">Enfoque</p>
+        <p>Hacer toda la gestion administrativa sin depender de una oficina fisica.</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Propuesta visual</p>
+          <h2>Sistema administrativo para trabajar desde casa con control total</h2>
+          <p class="hero-copy">
+            Esta version esta pensada para personas o equipos que necesitan gestionar
+            finanzas, ventas, documentos y personal en una sola plataforma, sin ir a una oficina.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <a class="action-btn tertiary" href="index.html">Ver version constructora</a>
+          <button class="action-btn primary" id="nextScreen">Ver siguiente modulo</button>
+          <button class="action-btn secondary" id="openModal">Ver alcance sugerido</button>
+        </div>
+      </header>
+
+      <section class="screen active" id="dashboard">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Panel principal</p>
+            <h3>Centro de control administrativo</h3>
+          </div>
+          <span class="status-pill">Trabajo remoto</span>
+        </div>
+
+        <div class="metrics-grid">
+          <article class="metric-card">
+            <span>Ingresos del mes</span>
+            <strong>$48,920</strong>
+            <small>Ventas registradas y conciliadas</small>
+          </article>
+          <article class="metric-card">
+            <span>Gastos operativos</span>
+            <strong>$18,600</strong>
+            <small>Servicios, compras y pagos</small>
+          </article>
+          <article class="metric-card">
+            <span>Documentos emitidos</span>
+            <strong>34</strong>
+            <small>Cartas, informes y plantillas</small>
+          </article>
+          <article class="metric-card">
+            <span>Reportes enviados</span>
+            <strong>12</strong>
+            <small>Office y suscripciones BI</small>
+          </article>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Tareas del dia</h4>
+              <span>En linea</span>
+            </div>
+            <div class="project-list">
+              <div class="project-row">
+                <div>
+                  <strong>Revisar gastos pendientes</strong>
+                  <p>5 movimientos por aprobar</p>
+                </div>
+                <span class="tag amber">Urgente</span>
+              </div>
+              <div class="project-row">
+                <div>
+                  <strong>Emitir informe semanal</strong>
+                  <p>Listo para exportar a Excel</p>
+                </div>
+                <span class="tag green">Listo</span>
+              </div>
+              <div class="project-row">
+                <div>
+                  <strong>Generar cartas laborales</strong>
+                  <p>3 solicitudes pendientes</p>
+                </div>
+                <span class="tag blue">Hoy</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Lo que resuelve esta version</h4>
+              <span>Uso diario</span>
+            </div>
+            <ul class="feature-list">
+              <li>Centralizar administracion, ventas y documentos desde cualquier lugar</li>
+              <li>Tener reportes listos para exportar o compartir virtualmente</li>
+              <li>Reducir dependencia de Excel disperso, Word manual y mensajes sueltos</li>
+              <li>Preparar toda la informacion para analisis con Power BI</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen" id="costos">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Modulo 1</p>
+            <h3>Costos, gastos e ingresos</h3>
+          </div>
+          <span class="status-pill">Base del sistema</span>
+        </div>
+
+        <div class="two-column">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Resumen de movimientos</h4>
+              <span>Vista rapida</span>
+            </div>
+            <div class="table-card">
+              <div class="table-row table-head">
+                <span>Fecha</span>
+                <span>Concepto</span>
+                <span>Tipo</span>
+                <span>Monto</span>
+              </div>
+              <div class="table-row">
+                <span>08/04</span>
+                <span>Pago de proveedores</span>
+                <span>Gasto</span>
+                <span>$980</span>
+              </div>
+              <div class="table-row">
+                <span>08/04</span>
+                <span>Venta cerrada</span>
+                <span>Ingreso</span>
+                <span>$2,400</span>
+              </div>
+              <div class="table-row">
+                <span>07/04</span>
+                <span>Suscripcion software</span>
+                <span>Gasto</span>
+                <span>$95</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Funciones sugeridas</h4>
+              <span>Primera etapa</span>
+            </div>
+            <ul class="feature-list">
+              <li>Registrar ingresos y gastos desde una sola pantalla</li>
+              <li>Filtrar por categoria, fecha, cliente o responsable</li>
+              <li>Ver utilidad estimada del periodo</li>
+              <li>Exportar reportes a Excel, CSV o PDF</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen" id="contabilidad">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Modulo 2</p>
+            <h3>Contabilidad administrativa</h3>
+          </div>
+          <span class="status-pill">Control interno</span>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Tablero contable</h4>
+              <span>Seguimiento</span>
+            </div>
+            <ul class="feature-list">
+              <li>Cuentas por cobrar y por pagar</li>
+              <li>Resumen mensual de ingresos y egresos</li>
+              <li>Control de facturas y comprobantes</li>
+              <li>Cierre administrativo por periodo</li>
+            </ul>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Importante para venderlo bien</h4>
+              <span>Enfoque comercial</span>
+            </div>
+            <ul class="feature-list">
+              <li>Presentarlo como control administrativo y reportes operativos</li>
+              <li>Evitar prometer contabilidad fiscal completa sin validar normativa</li>
+              <li>Dejar abierta la integracion con contador o software externo</li>
+              <li>Usar esta fase para ordenar la informacion del negocio</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen" id="rrhh">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Modulo 3</p>
+            <h3>Recursos humanos y soporte administrativo</h3>
+          </div>
+          <span class="status-pill">Operable en remoto</span>
+        </div>
+
+        <div class="two-column">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Expedientes del equipo</h4>
+              <span>Gestion interna</span>
+            </div>
+            <div class="people-grid">
+              <div class="person-card">
+                <strong>Mariela Ortiz</strong>
+                <span>Asistente administrativa</span>
+                <small>Documentos al dia</small>
+              </div>
+              <div class="person-card">
+                <strong>David Solis</strong>
+                <span>Vendedor</span>
+                <small>Meta mensual 78%</small>
+              </div>
+              <div class="person-card">
+                <strong>Lucia Gomez</strong>
+                <span>Coordinadora</span>
+                <small>2 cartas pendientes</small>
+              </div>
+              <div class="person-card">
+                <strong>Rosa Medina</strong>
+                <span>RRHH</span>
+                <small>Revision de contratos</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Funciones sugeridas</h4>
+              <span>Escalable</span>
+            </div>
+            <ul class="feature-list">
+              <li>Fichas de colaboradores, cargos y contratos</li>
+              <li>Cartas laborales generadas con plantillas</li>
+              <li>Control de vacaciones, estados y observaciones</li>
+              <li>Acceso por usuario para trabajo desde casa</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen" id="documentos">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Modulo 4</p>
+            <h3>Cartas, informes y plantillas de oficina</h3>
+          </div>
+          <span class="status-pill">Alta utilidad</span>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Biblioteca documental</h4>
+              <span>Automatizacion</span>
+            </div>
+            <div class="document-list">
+              <div class="document-item">
+                <strong>Carta laboral</strong>
+                <small>Lista para emitir</small>
+              </div>
+              <div class="document-item">
+                <strong>Informe mensual</strong>
+                <small>Con datos del sistema</small>
+              </div>
+              <div class="document-item">
+                <strong>Plantilla administrativa</strong>
+                <small>Formato institucional</small>
+              </div>
+              <div class="document-item">
+                <strong>Resumen de ventas</strong>
+                <small>Exportable</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Que se puede automatizar</h4>
+              <span>Valor practico</span>
+            </div>
+            <ul class="feature-list">
+              <li>Emitir cartas desde datos ya guardados</li>
+              <li>Armar informes recurrentes sin reescribirlos cada vez</li>
+              <li>Unificar firmas, encabezados y formatos</li>
+              <li>Reducir trabajo manual de oficina aunque se opere desde casa</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen" id="reportes">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Modulo 5</p>
+            <h3>Exportacion, Office y Power BI</h3>
+          </div>
+          <span class="status-pill">Fase 2</span>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Salidas disponibles</h4>
+              <span>Compatible</span>
+            </div>
+            <div class="export-grid">
+              <div class="export-card">Excel</div>
+              <div class="export-card">Word</div>
+              <div class="export-card">PDF</div>
+              <div class="export-card">Power BI</div>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Escenario de uso</h4>
+              <span>Gerencia virtual</span>
+            </div>
+            <ul class="feature-list">
+              <li>Extraer reportes para herramientas de Office</li>
+              <li>Conectar datos limpios para tableros de Power BI</li>
+              <li>Enviar suscripciones automaticas con indicadores clave</li>
+              <li>Consultar resultados desde casa, laptop o celular</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="panel-card-head">
+        <h4 id="modalTitle">Alcance recomendado para la version remota</h4>
+        <button class="close-btn" id="closeModal" aria-label="Cerrar">x</button>
+      </div>
+      <ul class="feature-list">
+        <li>Dashboard con ingresos, gastos, ventas y reportes</li>
+        <li>Modulo de movimientos administrativos y contables basicos</li>
+        <li>Emision de cartas e informes desde plantillas</li>
+        <li>Exportacion a Office y estructura lista para Power BI</li>
+        <li>Acceso web para operar desde casa o fuera de oficina</li>
+      </ul>
+      <p class="modal-note">
+        Recomendacion comercial: vender esta version como una plataforma administrativa remota, no como un sistema fiscal completo.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
