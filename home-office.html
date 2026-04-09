@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo | Administracion Remota</title>
+  <title>Demo | Oficina Virtual</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -13,38 +13,45 @@
   <div class="app-shell">
     <aside class="sidebar">
       <div class="brand">
-        <div class="brand-mark">AR</div>
+        <div class="brand-mark">OV</div>
         <div>
           <p class="eyebrow">Demo comercial</p>
-          <h1>Administracion Remota</h1>
-          <p class="brand-subtitle">Para operar desde casa o en movilidad</p>
+          <h1>Oficina Virtual</h1>
+          <p class="brand-subtitle">Fiscal, documental y laboral desde casa</p>
         </div>
       </div>
 
       <nav class="nav">
-        <button class="nav-item active" data-screen="dashboard">Centro de control</button>
-        <button class="nav-item" data-screen="costos">Costos y gastos</button>
-        <button class="nav-item" data-screen="contabilidad">Contabilidad</button>
-        <button class="nav-item" data-screen="rrhh">RRHH remoto</button>
-        <button class="nav-item" data-screen="documentos">Cartas e informes</button>
-        <button class="nav-item" data-screen="reportes">Office y Power BI</button>
+        <button class="nav-item active" data-screen="dashboard">Inicio Fiscal</button>
+        <button class="nav-item" data-screen="boveda">Boveda Legal</button>
+        <button class="nav-item" data-screen="pagos">Pagos y Finanzas</button>
+        <button class="nav-item" data-screen="rrhh">RRHH y Prestaciones</button>
+        <button class="nav-item" data-screen="onboarding">Onboarding y Alertas</button>
+        <button class="nav-item" data-screen="reportes">Planes y Expansion</button>
       </nav>
 
       <div class="sidebar-card">
-        <p class="eyebrow">Enfoque</p>
-        <p>Hacer toda la gestion administrativa sin depender de una oficina fisica.</p>
+        <p class="eyebrow">Propuesta de valor</p>
+        <p>Centraliza documentos, cumplimiento, planilla, reportes y automatizaciones en una plataforma web.</p>
       </div>
     </aside>
 
     <main class="main-content">
       <header class="hero">
         <div>
-          <p class="eyebrow">Propuesta visual</p>
-          <h2>Sistema administrativo para trabajar desde casa con control total</h2>
+          <p class="eyebrow">Vision del cliente</p>
+          <h2>Mockup integral de Oficina Virtual con boveda, fiscalidad, planilla y Power BI</h2>
           <p class="hero-copy">
-            Esta version esta pensada para personas o equipos que necesitan gestionar
-            finanzas, ventas, documentos y personal en una sola plataforma, sin ir a una oficina.
+            Esta propuesta mezcla la idea original del sistema administrativo con el nuevo concepto de
+            "Oficina Virtual": dashboard fiscal, documentos legales, facturacion, calculos laborales,
+            cartas automaticas, onboarding guiado y planes mensuales escalables.
           </p>
+          <div class="mini-tabbar">
+            <span class="mini-tab active">Inicio</span>
+            <span class="mini-tab">Boveda</span>
+            <span class="mini-tab">Pagos</span>
+            <span class="mini-tab">Perfil</span>
+          </div>
         </div>
         <div class="hero-actions">
           <a class="action-btn tertiary" href="index.html">Ver version constructora</a>
@@ -56,172 +63,285 @@
       <section class="screen active" id="dashboard">
         <div class="section-header">
           <div>
-            <p class="eyebrow">Panel principal</p>
-            <h3>Centro de control administrativo</h3>
+            <p class="eyebrow">Pantalla 1</p>
+            <h3>Inicio con dashboard fiscal y alertas de cumplimiento</h3>
           </div>
-          <span class="status-pill">Trabajo remoto</span>
+          <span class="status-pill">Gancho visual</span>
         </div>
 
         <div class="metrics-grid">
           <article class="metric-card">
-            <span>Ingresos del mes</span>
-            <strong>$48,920</strong>
-            <small>Ventas registradas y conciliadas</small>
+            <span>Total ingresos</span>
+            <strong>$12,480</strong>
+            <small>Estado fiscal - abril</small>
           </article>
           <article class="metric-card">
-            <span>Gastos operativos</span>
-            <strong>$18,600</strong>
-            <small>Servicios, compras y pagos</small>
+            <span>Reserva sugerida</span>
+            <strong>$1,940</strong>
+            <small>IVA + ISR estimado</small>
           </article>
           <article class="metric-card">
-            <span>Documentos emitidos</span>
-            <strong>34</strong>
-            <small>Cartas, informes y plantillas</small>
+            <span>Alertas activas</span>
+            <strong>4</strong>
+            <small>Boveda y planilla</small>
           </article>
           <article class="metric-card">
-            <span>Reportes enviados</span>
-            <strong>12</strong>
-            <small>Office y suscripciones BI</small>
+            <span>Reportes listos</span>
+            <strong>9</strong>
+            <small>PDF, Excel y BI</small>
           </article>
         </div>
 
         <div class="dashboard-grid">
           <article class="panel-card">
             <div class="panel-card-head">
-              <h4>Tareas del dia</h4>
-              <span>En linea</span>
+              <h4>Estado fiscal del mes</h4>
+              <span>Pie / dona conceptual</span>
             </div>
-            <div class="project-list">
-              <div class="project-row">
-                <div>
-                  <strong>Revisar gastos pendientes</strong>
-                  <p>5 movimientos por aprobar</p>
+            <div class="donut-layout">
+              <div class="donut-visual">
+                <div class="donut-center">
+                  <strong>84%</strong>
+                  <small>ingreso neto</small>
                 </div>
-                <span class="tag amber">Urgente</span>
               </div>
-              <div class="project-row">
-                <div>
-                  <strong>Emitir informe semanal</strong>
-                  <p>Listo para exportar a Excel</p>
+              <div class="legend-list">
+                <div class="legend-row">
+                  <span class="legend-dot income"></span>
+                  <div>
+                    <strong>Ingresos netos</strong>
+                    <small>$10,540</small>
+                  </div>
                 </div>
-                <span class="tag green">Listo</span>
-              </div>
-              <div class="project-row">
-                <div>
-                  <strong>Generar cartas laborales</strong>
-                  <p>3 solicitudes pendientes</p>
+                <div class="legend-row">
+                  <span class="legend-dot reserve"></span>
+                  <div>
+                    <strong>Reserva de impuestos</strong>
+                    <small>$1,940</small>
+                  </div>
                 </div>
-                <span class="tag blue">Hoy</span>
               </div>
             </div>
           </article>
 
           <article class="panel-card">
             <div class="panel-card-head">
-              <h4>Lo que resuelve esta version</h4>
-              <span>Uso diario</span>
+              <h4>Alertas de la boveda</h4>
+              <span>Semaforo de cumplimiento</span>
             </div>
-            <ul class="feature-list">
-              <li>Centralizar administracion, ventas y documentos desde cualquier lugar</li>
-              <li>Tener reportes listos para exportar o compartir virtualmente</li>
-              <li>Reducir dependencia de Excel disperso, Word manual y mensajes sueltos</li>
-              <li>Preparar toda la informacion para analisis con Power BI</li>
-            </ul>
+            <div class="project-list">
+              <div class="project-row">
+                <div>
+                  <strong>Paz y Salvo Panama</strong>
+                  <p>Vencido hace 2 dias</p>
+                </div>
+                <span class="tag amber">Renovar</span>
+              </div>
+              <div class="project-row">
+                <div>
+                  <strong>Contrato Cliente X</strong>
+                  <p>Vence en 5 dias</p>
+                </div>
+                <span class="tag blue">Por vencer</span>
+              </div>
+              <div class="project-row">
+                <div>
+                  <strong>Aviso de Operacion</strong>
+                  <p>Documento vigente</p>
+                </div>
+                <span class="tag green">Activo</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Notificacion inteligente</h4>
+              <span>RRHH</span>
+            </div>
+            <p class="callout">
+              Atencion: su reserva legal ha subido un 15% este mes debido a las horas extras del personal.
+            </p>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Header conceptual</h4>
+              <span>Vista mobile / web</span>
+            </div>
+            <div class="feature-list-block">
+              <p>Hola, Karla</p>
+              <p>Boton de notificaciones</p>
+              <p>Acceso rapido a reportes, pagos y boveda</p>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="screen" id="costos">
+      <section class="screen" id="boveda">
         <div class="section-header">
           <div>
-            <p class="eyebrow">Modulo 1</p>
-            <h3>Costos, gastos e ingresos</h3>
+            <p class="eyebrow">Pantalla 2</p>
+            <h3>Boveda legal, contratos y documentacion inteligente</h3>
           </div>
-          <span class="status-pill">Base del sistema</span>
+          <span class="status-pill">Core documental</span>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Mi boveda legal</h4>
+              <span>Subir doc + buscador</span>
+            </div>
+            <div class="chip-row">
+              <span class="chip active">Todos</span>
+              <span class="chip">Legales</span>
+              <span class="chip">Tributarios</span>
+              <span class="chip">Contratos</span>
+              <span class="chip">Empleados</span>
+            </div>
+            <div class="document-list">
+              <div class="document-item">
+                <strong>Pacto Social.pdf</strong>
+                <small>PDF | Subido 05/04 | Vigente</small>
+              </div>
+              <div class="document-item">
+                <strong>Paz y Salvo CSS.jpg</strong>
+                <small>JPG | Subido 02/04 | Por vencer</small>
+              </div>
+              <div class="document-item">
+                <strong>Contrato Cliente X.pdf</strong>
+                <small>PDF | Vence en 5 dias</small>
+              </div>
+              <div class="document-item">
+                <strong>Aviso de Operacion.pdf</strong>
+                <small>PDF | Vigente</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Checklist de inicio</h4>
+              <span>Documentos requeridos</span>
+            </div>
+            <ul class="feature-list">
+              <li>Aviso de Operacion</li>
+              <li>Cedula del representante legal</li>
+              <li>Pacto social y poderes vigentes</li>
+              <li>Ultimo TXT del SIPE y planilla interna</li>
+              <li>Contratos firmados, paz y salvo CSS y DGI</li>
+              <li>Para construccion: permisos, polizas, carnets y presupuesto base</li>
+            </ul>
+          </article>
         </div>
 
         <div class="two-column">
           <article class="panel-card">
             <div class="panel-card-head">
-              <h4>Resumen de movimientos</h4>
-              <span>Vista rapida</span>
+              <h4>Emision automatica de documentos</h4>
+              <span>Plantillas legales</span>
             </div>
-            <div class="table-card">
-              <div class="table-row table-head">
-                <span>Fecha</span>
-                <span>Concepto</span>
-                <span>Tipo</span>
-                <span>Monto</span>
-              </div>
-              <div class="table-row">
-                <span>08/04</span>
-                <span>Pago de proveedores</span>
-                <span>Gasto</span>
-                <span>$980</span>
-              </div>
-              <div class="table-row">
-                <span>08/04</span>
-                <span>Venta cerrada</span>
-                <span>Ingreso</span>
-                <span>$2,400</span>
-              </div>
-              <div class="table-row">
-                <span>07/04</span>
-                <span>Suscripcion software</span>
-                <span>Gasto</span>
-                <span>$95</span>
-              </div>
-            </div>
+            <ul class="feature-list">
+              <li>Carta de trabajo</li>
+              <li>Carta de despido</li>
+              <li>Carta de renuncia</li>
+              <li>Amonestacion disciplinaria</li>
+              <li>Contrato de trabajo borrador</li>
+            </ul>
           </article>
 
           <article class="panel-card">
             <div class="panel-card-head">
-              <h4>Funciones sugeridas</h4>
-              <span>Primera etapa</span>
+              <h4>Asistencia adicional</h4>
+              <span>Fee unico opcional</span>
             </div>
-            <ul class="feature-list">
-              <li>Registrar ingresos y gastos desde una sola pantalla</li>
-              <li>Filtrar por categoria, fecha, cliente o responsable</li>
-              <li>Ver utilidad estimada del periodo</li>
-              <li>Exportar reportes a Excel, CSV o PDF</li>
-            </ul>
+            <p class="callout subtle">
+              No tienes tu paz y salvo actualizado o no encuentras tu aviso de operacion.
+              Presiona "Asistencia Nexus" y nuestro equipo lo tramita por ti por un fee unico.
+            </p>
           </article>
         </div>
       </section>
 
-      <section class="screen" id="contabilidad">
+      <section class="screen" id="pagos">
         <div class="section-header">
           <div>
-            <p class="eyebrow">Modulo 2</p>
-            <h3>Contabilidad administrativa</h3>
+            <p class="eyebrow">Pantalla 3</p>
+            <h3>Pagos, facturacion, gastos y reportes fiscales</h3>
           </div>
-          <span class="status-pill">Control interno</span>
+          <span class="status-pill">Motor financiero</span>
+        </div>
+
+        <div class="metrics-grid">
+          <article class="metric-card">
+            <span>Por cobrar</span>
+            <strong>$2,980</strong>
+            <small>Facturas pendientes</small>
+          </article>
+          <article class="metric-card">
+            <span>Por pagar</span>
+            <strong>$1,145</strong>
+            <small>Gastos del periodo</small>
+          </article>
+          <article class="metric-card">
+            <span>Deducibles</span>
+            <strong>$680</strong>
+            <small>Listos para contador</small>
+          </article>
+          <article class="metric-card">
+            <span>Exportar</span>
+            <strong>PDF</strong>
+            <small>Excel, CSV, Office</small>
+          </article>
         </div>
 
         <div class="dashboard-grid">
           <article class="panel-card">
             <div class="panel-card-head">
-              <h4>Tablero contable</h4>
-              <span>Seguimiento</span>
+              <h4>Movimientos recientes</h4>
+              <span>Nueva factura + gasto</span>
             </div>
-            <ul class="feature-list">
-              <li>Cuentas por cobrar y por pagar</li>
-              <li>Resumen mensual de ingresos y egresos</li>
-              <li>Control de facturas y comprobantes</li>
-              <li>Cierre administrativo por periodo</li>
-            </ul>
+            <div class="table-card">
+              <div class="table-row table-head">
+                <span>Concepto</span>
+                <span>Tipo</span>
+                <span>Categoria</span>
+                <span>Monto</span>
+              </div>
+              <div class="table-row">
+                <span>Pago Cliente X</span>
+                <span>Ingreso</span>
+                <span>Facturacion</span>
+                <span>+$500</span>
+              </div>
+              <div class="table-row">
+                <span>Suscripcion Adobe</span>
+                <span>Gasto</span>
+                <span>Herramientas</span>
+                <span>-$20.99</span>
+              </div>
+              <div class="table-row">
+                <span>Pago proveedor legal</span>
+                <span>Gasto</span>
+                <span>Deducible</span>
+                <span>-$160</span>
+              </div>
+            </div>
           </article>
 
           <article class="panel-card">
             <div class="panel-card-head">
-              <h4>Importante para venderlo bien</h4>
-              <span>Enfoque comercial</span>
+              <h4>Nota para desarrollo</h4>
+              <span>Reporte mensual</span>
             </div>
             <ul class="feature-list">
-              <li>Presentarlo como control administrativo y reportes operativos</li>
-              <li>Evitar prometer contabilidad fiscal completa sin validar normativa</li>
-              <li>Dejar abierta la integracion con contador o software externo</li>
-              <li>Usar esta fase para ordenar la informacion del negocio</li>
+              <li>Consolidar gastos categorizados como deducibles</li>
+              <li>Generar reporte mensual descargable en PDF y Excel</li>
+              <li>Dejar estructura limpia para Power BI</li>
+              <li>Permitir uso por pais y moneda original</li>
             </ul>
           </article>
         </div>
@@ -230,102 +350,190 @@
       <section class="screen" id="rrhh">
         <div class="section-header">
           <div>
-            <p class="eyebrow">Modulo 3</p>
-            <h3>Recursos humanos y soporte administrativo</h3>
+            <p class="eyebrow">Modulo laboral</p>
+            <h3>Prestaciones, reserva legal, liquidacion y voucher digital</h3>
           </div>
-          <span class="status-pill">Operable en remoto</span>
-        </div>
-
-        <div class="two-column">
-          <article class="panel-card">
-            <div class="panel-card-head">
-              <h4>Expedientes del equipo</h4>
-              <span>Gestion interna</span>
-            </div>
-            <div class="people-grid">
-              <div class="person-card">
-                <strong>Mariela Ortiz</strong>
-                <span>Asistente administrativa</span>
-                <small>Documentos al dia</small>
-              </div>
-              <div class="person-card">
-                <strong>David Solis</strong>
-                <span>Vendedor</span>
-                <small>Meta mensual 78%</small>
-              </div>
-              <div class="person-card">
-                <strong>Lucia Gomez</strong>
-                <span>Coordinadora</span>
-                <small>2 cartas pendientes</small>
-              </div>
-              <div class="person-card">
-                <strong>Rosa Medina</strong>
-                <span>RRHH</span>
-                <small>Revision de contratos</small>
-              </div>
-            </div>
-          </article>
-
-          <article class="panel-card">
-            <div class="panel-card-head">
-              <h4>Funciones sugeridas</h4>
-              <span>Escalable</span>
-            </div>
-            <ul class="feature-list">
-              <li>Fichas de colaboradores, cargos y contratos</li>
-              <li>Cartas laborales generadas con plantillas</li>
-              <li>Control de vacaciones, estados y observaciones</li>
-              <li>Acceso por usuario para trabajo desde casa</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="screen" id="documentos">
-        <div class="section-header">
-          <div>
-            <p class="eyebrow">Modulo 4</p>
-            <h3>Cartas, informes y plantillas de oficina</h3>
-          </div>
-          <span class="status-pill">Alta utilidad</span>
+          <span class="status-pill">Elite compliance</span>
         </div>
 
         <div class="dashboard-grid">
           <article class="panel-card">
             <div class="panel-card-head">
-              <h4>Biblioteca documental</h4>
-              <span>Automatizacion</span>
+              <h4>Calculos base</h4>
+              <span>Panama</span>
             </div>
-            <div class="document-list">
-              <div class="document-item">
-                <strong>Carta laboral</strong>
-                <small>Lista para emitir</small>
+            <ul class="feature-list">
+              <li>Vacaciones: 9.09% mensual</li>
+              <li>XIII Mes: salario bruto / 12</li>
+              <li>Seguro Social obrero: 9.75%</li>
+              <li>Seguro Social patronal: 12.25%</li>
+              <li>Seguro Educativo: 1.25% obrero / 1.50% patronal</li>
+              <li>Prima de antiguedad e indemnizacion segun tipo de contrato</li>
+            </ul>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Reserva de pasivos laborales</h4>
+              <span>Reporte gerencial</span>
+            </div>
+            <div class="table-card">
+              <div class="table-row table-head">
+                <span>Empleado</span>
+                <span>Vacaciones</span>
+                <span>XIII</span>
+                <span>Total</span>
               </div>
-              <div class="document-item">
-                <strong>Informe mensual</strong>
-                <small>Con datos del sistema</small>
+              <div class="table-row">
+                <span>Maria Perez</span>
+                <span>$285</span>
+                <span>$190</span>
+                <span>$620</span>
               </div>
-              <div class="document-item">
-                <strong>Plantilla administrativa</strong>
-                <small>Formato institucional</small>
+              <div class="table-row">
+                <span>Carlos Rios</span>
+                <span>$340</span>
+                <span>$225</span>
+                <span>$744</span>
               </div>
-              <div class="document-item">
-                <strong>Resumen de ventas</strong>
-                <small>Exportable</small>
+              <div class="table-row">
+                <span>Lucia Gomez</span>
+                <span>$310</span>
+                <span>$206</span>
+                <span>$681</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Hoja de liquidacion draft</h4>
+              <span>Borrador automatico</span>
+            </div>
+            <ul class="feature-list">
+              <li>Vacaciones proporcionales</li>
+              <li>XIII Mes proporcional</li>
+              <li>Prima de antiguedad</li>
+              <li>Indemnizacion si aplica</li>
+              <li>Nota legal: calculo referencial sujeto a validacion final</li>
+            </ul>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Comprobante de pago</h4>
+              <span>Voucher digital</span>
+            </div>
+            <ul class="feature-list">
+              <li>Total bruto con salario base, horas extra y comisiones</li>
+              <li>Deducciones de CSS, seguro educativo e ISR</li>
+              <li>Neto a recibir listo para PDF o WhatsApp</li>
+              <li>Ideal para el plan con empleados</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="two-column">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Costo real de planilla</h4>
+              <span>Power BI</span>
+            </div>
+            <ul class="feature-list">
+              <li>Salario bruto + cuota patronal + seguro educativo patronal + riesgos</li>
+              <li>Resumen de retenciones mensuales</li>
+              <li>Proyeccion de pago SIPE</li>
+              <li>Panorama financiero para gerencia</li>
+            </ul>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Validaciones de seguridad</h4>
+              <span>Despidos</span>
+            </div>
+            <ul class="feature-list">
+              <li>Si el cliente marca despido injustificado, activar alerta de indemnizacion</li>
+              <li>Recordatorio de preaviso de 30 dias en contratos indefinidos</li>
+              <li>Control interno para reducir errores manuales</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="screen" id="onboarding">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">Proceso de exito</p>
+            <h3>Onboarding impecable, automatizaciones y arquitectura sugerida</h3>
+          </div>
+          <span class="status-pill">Clave para escalar</span>
+        </div>
+
+        <div class="dashboard-grid">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Barra de progreso de configuracion</h4>
+              <span>Simple para el cliente</span>
+            </div>
+            <div class="progress-steps">
+              <div class="progress-step active">
+                <strong>Paso 1</strong>
+                <small>Identidad: aviso de operacion y cedula</small>
+              </div>
+              <div class="progress-step active">
+                <strong>Paso 2</strong>
+                <small>Inteligencia: TXT SIPE y planilla</small>
+              </div>
+              <div class="progress-step">
+                <strong>Paso 3</strong>
+                <small>Seguridad: contratos, seguros y alertas</small>
               </div>
             </div>
           </article>
 
           <article class="panel-card">
             <div class="panel-card-head">
-              <h4>Que se puede automatizar</h4>
-              <span>Valor practico</span>
+              <h4>Workflow con Make.com</h4>
+              <span>Automatizacion</span>
             </div>
             <ul class="feature-list">
-              <li>Emitir cartas desde datos ya guardados</li>
-              <li>Armar informes recurrentes sin reescribirlos cada vez</li>
-              <li>Unificar firmas, encabezados y formatos</li>
-              <li>Reducir trabajo manual de oficina aunque se opere desde casa</li>
+              <li>Extraer datos de Airtable</li>
+              <li>Insertarlos en plantillas de Google Docs o PDF</li>
+              <li>Anadir logo y firma autorizada</li>
+              <li>Enviar el documento a la boveda o por WhatsApp</li>
+              <li>Disparar alertas por correo o mensaje</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="two-column">
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Arquitectura sugerida</h4>
+              <span>Version no-code / low-code</span>
+            </div>
+            <ul class="feature-list">
+              <li>Frontend: Softr</li>
+              <li>Base de datos: Airtable</li>
+              <li>Automatizaciones: Make.com</li>
+              <li>Seguridad: visibilidad por usuario y registros vinculados</li>
+            </ul>
+          </article>
+
+          <article class="panel-card">
+            <div class="panel-card-head">
+              <h4>Master sheet sugerida</h4>
+              <span>Columnas clave</span>
+            </div>
+            <ul class="feature-list">
+              <li>Fecha aniversario</li>
+              <li>Tasa riesgos</li>
+              <li>Acumulado vacaciones</li>
+              <li>Acumulado XIII</li>
+              <li>Usuario, documentos, movimientos y adjuntos</li>
             </ul>
           </article>
         </div>
@@ -334,36 +542,73 @@
       <section class="screen" id="reportes">
         <div class="section-header">
           <div>
-            <p class="eyebrow">Modulo 5</p>
-            <h3>Exportacion, Office y Power BI</h3>
+            <p class="eyebrow">Modelo de negocio</p>
+            <h3>Planes, Power BI, expansion regional y ecosistema Nexus</h3>
           </div>
-          <span class="status-pill">Fase 2</span>
+          <span class="status-pill">Escalable</span>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="panel-card pricing-card">
+            <p class="eyebrow">Basic Smart</p>
+            <strong class="price">$75 / mes</strong>
+            <ul class="feature-list">
+              <li>Ideal para independientes</li>
+              <li>Direccion comercial prime</li>
+              <li>Manejo de correspondencia</li>
+              <li>Aviso de operacion</li>
+              <li>Escaneo de 5 docs por mes</li>
+            </ul>
+          </article>
+
+          <article class="panel-card pricing-card featured-plan">
+            <p class="eyebrow">Business BI</p>
+            <strong class="price">$175 / mes</strong>
+            <ul class="feature-list">
+              <li>Todo lo del plan basic</li>
+              <li>Recepcionista IA por WhatsApp</li>
+              <li>Dashboard Power BI ventas</li>
+              <li>Reporte de origen de clientes</li>
+              <li>Cartas de trabajo y renuncias ilimitadas</li>
+            </ul>
+          </article>
+
+          <article class="panel-card pricing-card">
+            <p class="eyebrow">Elite Compliance</p>
+            <strong class="price">$350 / mes</strong>
+            <ul class="feature-list">
+              <li>Todo lo del business</li>
+              <li>Calculo de prestaciones y cuotas CSS</li>
+              <li>Generacion de vouchers de pago</li>
+              <li>Contratos y despidos con liquidacion</li>
+              <li>Ideal para empresas con empleados</li>
+            </ul>
+          </article>
         </div>
 
         <div class="dashboard-grid">
           <article class="panel-card">
             <div class="panel-card-head">
-              <h4>Salidas disponibles</h4>
-              <span>Compatible</span>
+              <h4>Expansion continental</h4>
+              <span>Capa de inteligencia legal</span>
             </div>
-            <div class="export-grid">
-              <div class="export-card">Excel</div>
-              <div class="export-card">Word</div>
-              <div class="export-card">PDF</div>
-              <div class="export-card">Power BI</div>
-            </div>
+            <ul class="feature-list">
+              <li>Adaptar reglas laborales por pais: Panama, Colombia, Mexico y Costa Rica</li>
+              <li>Un tablero regional para pasivos laborales y cumplimiento</li>
+              <li>Promesa de cero multas como diferenciador comercial</li>
+            </ul>
           </article>
 
           <article class="panel-card">
             <div class="panel-card-head">
-              <h4>Escenario de uso</h4>
-              <span>Gerencia virtual</span>
+              <h4>Ecosistema de marca</h4>
+              <span>Nexus / Smart Hub</span>
             </div>
             <ul class="feature-list">
-              <li>Extraer reportes para herramientas de Office</li>
-              <li>Conectar datos limpios para tableros de Power BI</li>
-              <li>Enviar suscripciones automaticas con indicadores clave</li>
-              <li>Consultar resultados desde casa, laptop o celular</li>
+              <li>Red de smart nodes y soft landing regional</li>
+              <li>Marketplace de contadores, abogados y expertos SSO verificados</li>
+              <li>Codigo QR para tarjeta de presentacion del cliente</li>
+              <li>Servicios premium con fee adicional</li>
             </ul>
           </article>
         </div>
@@ -374,18 +619,18 @@
   <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
     <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <div class="panel-card-head">
-        <h4 id="modalTitle">Alcance recomendado para la version remota</h4>
+        <h4 id="modalTitle">Alcance recomendado para la primera version</h4>
         <button class="close-btn" id="closeModal" aria-label="Cerrar">x</button>
       </div>
       <ul class="feature-list">
-        <li>Dashboard con ingresos, gastos, ventas y reportes</li>
-        <li>Modulo de movimientos administrativos y contables basicos</li>
-        <li>Emision de cartas e informes desde plantillas</li>
-        <li>Exportacion a Office y estructura lista para Power BI</li>
-        <li>Acceso web para operar desde casa o fuera de oficina</li>
+        <li>Dashboard fiscal con alertas y reserva sugerida</li>
+        <li>Boveda documental con contratos, vencimientos y checklist de onboarding</li>
+        <li>Pagos, facturacion, gastos y reporte mensual descargable</li>
+        <li>Modulo laboral con prestaciones, reserva legal y vouchers</li>
+        <li>Arquitectura lista para Power BI, automatizaciones y planes mensuales</li>
       </ul>
       <p class="modal-note">
-        Recomendacion comercial: vender esta version como una plataforma administrativa remota, no como un sistema fiscal completo.
+        Recomendacion comercial: vender primero una fase MVP administrable y dejar la expansion regional como etapa futura.
       </p>
     </div>
   </div>
